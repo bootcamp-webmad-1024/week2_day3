@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="mouse class1 class2 another-class">Soy un ratón</div>
+
+    <script>
+
+        const mouseTag = document.querySelector('div')
+
+        // className (getter)
+        console.log('LAS CLASES SON', mouseTag.className)
+
+        // className (setter)
+        mouseTag.className = 'ahora-solo-soy-esta-clase'
+
+
+
+    </script>
+
+</body>
+
+</html>

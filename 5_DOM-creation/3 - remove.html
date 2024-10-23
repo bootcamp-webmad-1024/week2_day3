@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+
+        <h1>Solo hay un título</h1>
+        <hr>
+
+        <!-- VAMOS A ELIMINAR ESTE H2 -->
+        <h2>Quitame</h2>
+
+
+    </section>
+
+    <script>
+
+        const parent = document.querySelector('section')
+        const childToRemove = document.querySelector('h2')
+
+        parent.removeChild(childToRemove)
+
+
+    </script>
+</body>
+
+</html>

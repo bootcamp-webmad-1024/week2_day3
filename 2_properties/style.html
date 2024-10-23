@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="lol">¡Ponme rojo!</div>
+
+    <div class="mouse">Soy un ratón</div>
+    <div class="mouse">Soy un ratón</div>
+    <div class="mouse">Soy un ratón</div>
+
+    <script>
+
+        const lolDiv = document.querySelector('#lol')
+        lolDiv.style.color = 'red'
+
+        const mouses = document.querySelectorAll('.mouse')
+        mouses.forEach(eachTag => {
+            eachTag.style.color = 'blue'
+            eachTag.style.backgroundColor = 'red'
+            eachTag.innerHTML = '¡Ahora soy azul!'
+        })
+
+
+    </script>
+
+</body>
+
+</html>

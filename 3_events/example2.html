@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Ahora soy de color negro</h1>
+
+    <button>Hazme click para poner el título rojo</button>
+    <button>Hazme click para poner el título rojo</button>
+    <button>Hazme click para poner el título rojo</button>
+    <button>Hazme click para poner el título rojo</button>
+    <button>Hazme click para poner el título rojo</button>
+    <button>Hazme click para poner el título rojo</button>
+
+    <script>
+
+        const buttons = document.querySelectorAll('button')
+
+        buttons.forEach(eachButton => {
+
+            eachButton.onclick = () => {
+                const title = document.querySelector('h1')
+                title.style.color = 'red'
+            }
+        })
+
+    </script>
+</body>
+
+</html>

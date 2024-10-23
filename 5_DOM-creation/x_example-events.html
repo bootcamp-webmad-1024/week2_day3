@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+        <h1>Listado dinámico</h1>
+
+        <hr>
+
+        <ul>
+            <li>Un elemento</li>
+            <li>Otro elemento</li>
+        </ul>
+
+        <hr>
+        <button>Añadir más</button>
+
+    </section>
+
+    <script>
+
+        const button = document.querySelector('button')
+        let bulletCount = 0
+
+        button.onclick = () => {
+
+            bulletCount++
+
+            const newListItem = document.createElement('li')
+            newListItem.innerHTML = `Soy el <em>bullet</em> número ${bulletCount} yay`
+
+            const parent = document.querySelector('ul')
+            parent.appendChild(newListItem)
+        }
+
+
+    </script>
+</body>
+
+</html>

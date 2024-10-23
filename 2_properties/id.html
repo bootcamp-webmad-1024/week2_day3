@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="singleTagId" class="mouse">Soy un ratón</div>
+
+    <script>
+
+        let theMouseDiv = document.querySelector('.mouse')
+
+        // getter
+        console.log('El ID de la etiqueta es:', theMouseDiv.id)
+
+        // setter
+        theMouseDiv.id = 'ahora-tiene-este-id'
+
+    </script>
+
+</body>
+
+</html>

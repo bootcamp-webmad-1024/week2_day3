@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+
+        <h1>Solo hay un título</h1>
+        <hr>
+
+    </section>
+
+    <script>
+
+        // 1 - create element
+        let h2Tag = document.createElement('h2')
+        console.log(h2Tag)
+
+        // 2 - detail element
+        h2Tag.innerHTML = 'Soy un subtítulo <em>creado</em> con JS'
+        h2Tag.setAttribute('class', 'soy-una-clase')
+        h2Tag.style.color = 'red'
+
+        // 3 - injection
+        const parent = document.querySelector('section')
+        const h1Tag = document.querySelector('h1')
+        parent.insertBefore(h2Tag, h1Tag)           // argumentos: nodo sobre el que inyectar, nodo a inyectar
+
+
+    </script>
+</body>
+
+</html>
